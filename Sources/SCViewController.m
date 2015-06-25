@@ -91,6 +91,10 @@
 //    self.scrollableWaveformView.waveformView.channelStartIndex = sender.on ? 1 : 0;
 }
 
+-(IBAction)roundedCornersSwitchChanged:(UISwitch *)sender {
+    self.scrollableWaveformView.waveformView.roundedCorners = sender.on ? YES : NO;
+}
+
 - (IBAction)sliderProgressChanged:(UISlider*)sender
 {
     CMTime start = self.scrollableWaveformView.waveformView.timeRange.start;

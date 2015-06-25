@@ -20,6 +20,13 @@
 @property (strong, nonatomic) AVAsset *asset;
 
 /**
+ Bool to determine if waveform layers should have rounded edges
+ NOTE: This only works when precision/lineWidthRatio result in lines with a width > 2
+ */
+
+@property (assign, nonatomic) BOOL roundedCorners;
+
+/**
  The color that will be used for every bands that are after
  the progressTime.
  */

@@ -231,7 +231,15 @@
                 
                 layer.frame = CGRectMake((newFirstVisibleIdx + idx) * bandWidth, _channelsPadding * channel + heightPerChannel * channel + halfHeightPerChannel - pixelHeight,
                                          _lineWidthRatio / pixelRatio, pixelHeight * 2);
-                                
+                
+                if (_roundedCorners) {
+                    
+                    layer.cornerRadius = layer.frame.size.width/2;
+                    NSLog(@"YES rounded %f", layer.cornerRadius);
+                }else {
+                    NSLog(@"NO rounded");
+                }
+                
                 layer.waveformTime = time;
             }
         }];
@@ -298,9 +306,22 @@
                 CGRect bounds = layer.bounds;
                 bounds.size.width = _lineWidthRatio / pixelRatio;
                 layer.bounds = bounds;
-            }            
+            }
+            
+            if (_roundedCorners) {
+                layer.cornerRadius = layer.frame.size.width/2;
+                NSLog(@"YES %f", layer.cornerRadius);
+            }else {
+                layer.cornerRadius = 0;
+                NSLog(@"NO");
+            }
         }
     }
+}
+
+- (void)setRoundedCorners:(BOOL)roundedCorners {
+    _roundedCorners = roundedCorners;
+    [self _updateLayersColor:NO lineWidth:NO];
 }
 
 - (void)setNormalColor:(UIColor *)normalColor {
