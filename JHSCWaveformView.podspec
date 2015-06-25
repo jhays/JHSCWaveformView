@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "SCWaveformView"
+  s.name         = "JHSCWaveformView"
   s.version      = "2.0.6"
   s.summary      = "A blazing fast customizable waveform view."
 
@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
 		   It will cache the file data to avoid having to read sections that have been already computed. Furthermore, if it does have to read the file, it will read it by bigger segment to minimize the number of read operations next time the timeRange changes.
                    DESC
 
-  s.homepage     = "https://github.com/rFlex/SCWaveformView"
+  s.homepage     = "https://github.com/jhays/JHSCWaveformView"
   s.license      = 'Apache License, Version 2.0'
-  s.author       = { "Simon CORSIN" => "simon@corsin.me" }
+  s.author       = { "Simon CORSIN" => "simon@corsin.me", "JHays" => "orbosphere@gmail.com" }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/rFlex/SCWaveformView.git", :tag => "v2.0.6" }
+  s.source       = { :git => "https://github.com/jhays/JHSCWaveformView.git", :tag => "v2.0.6" }
   s.source_files  = [
   		  "Sources/SCWaveformView.h",
 		  "Sources/SCWaveformView.m",
