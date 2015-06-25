@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SCWaveformView.xcodeproj">
+      location = "self:/Users/julianhays/Dev/JHSCWaveformView/JHSCWaveformView.xcodeproj">
    </FileRef>
 </Workspace>

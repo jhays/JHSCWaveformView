@@ -1,7 +1,12 @@
-SCWaveformView
+JHSCWaveformView
 ==============
 
 A blazing fast customizable waveform view. Extract the audio section of an asset (which can be both video or audio) and display a waveform.
+
+JHSCWaveformView is a fork of SCWaveformView. 
+JHSCWaveformView is a WIP, goals include:
+  * Additional styling (Gradient colors, rounded corners) -in progress
+  * Color-coded EQ based mutli-layered waveforms -todo
 
 <img src="waveform.gif">
 
