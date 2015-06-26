@@ -7,46 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC27B75E1A9D0C80003DA2CB /* SCScrollableWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC27B75D1A9D0C80003DA2CB /* SCScrollableWaveformView.m */; };
-		DC27B7611A9D2649003DA2CB /* SCWaveformCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DC27B7601A9D2649003DA2CB /* SCWaveformCache.m */; };
+		60C4FC011B3CEC2000A7E39D /* JHSCWaveformView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C4FBFF1B3CEC2000A7E39D /* JHSCWaveformView-Info.plist */; };
+		60C4FC031B3CEC2700A7E39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC021B3CEC2700A7E39D /* main.m */; };
+		60C4FC081B3CEC4400A7E39D /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC051B3CEC4400A7E39D /* SCAppDelegate.m */; };
+		60C4FC091B3CEC4400A7E39D /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC071B3CEC4400A7E39D /* SCViewController.m */; };
+		60C4FC0B1B3CEC5500A7E39D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C4FC0A1B3CEC5500A7E39D /* Images.xcassets */; };
+		64B4A50CEE3D3C547905618B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5B7330987CC3940CE9B0FC /* libPods.a */; };
 		DC2C7A331892A0770085043D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2C7A321892A0770085043D /* Foundation.framework */; };
 		DC2C7A351892A0770085043D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2C7A341892A0770085043D /* CoreGraphics.framework */; };
 		DC2C7A371892A0770085043D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2C7A361892A0770085043D /* UIKit.framework */; };
-		DC2C7A3D1892A0770085043D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC2C7A3B1892A0770085043D /* InfoPlist.strings */; };
-		DC2C7A3F1892A0770085043D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2C7A3E1892A0770085043D /* main.m */; };
-		DC2C7A431892A0770085043D /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2C7A421892A0770085043D /* SCAppDelegate.m */; };
-		DC2C7A461892A0770085043D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2C7A441892A0770085043D /* Main.storyboard */; };
-		DC2C7A491892A0770085043D /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2C7A481892A0770085043D /* SCViewController.m */; };
-		DC2C7A4B1892A0770085043D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2C7A4A1892A0770085043D /* Images.xcassets */; };
-		DC2C7A691892A0AD0085043D /* SCWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2C7A681892A0AD0085043D /* SCWaveformView.m */; };
 		DC2C7A6C1892A84F0085043D /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC2C7A6B1892A84F0085043D /* test.m4a */; };
 		DCC79A2C1896983100CECFE7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC79A2B1896983000CECFE7 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC27B75C1A9D0C80003DA2CB /* SCScrollableWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCScrollableWaveformView.h; sourceTree = "<group>"; };
-		DC27B75D1A9D0C80003DA2CB /* SCScrollableWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCScrollableWaveformView.m; sourceTree = "<group>"; };
-		DC27B75F1A9D2649003DA2CB /* SCWaveformCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWaveformCache.h; sourceTree = "<group>"; };
-		DC27B7601A9D2649003DA2CB /* SCWaveformCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWaveformCache.m; sourceTree = "<group>"; };
+		51BEC902C2E949847CA757EB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		60C4FBFF1B3CEC2000A7E39D /* JHSCWaveformView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JHSCWaveformView-Info.plist"; sourceTree = SOURCE_ROOT; };
+		60C4FC001B3CEC2000A7E39D /* JHSCWaveformView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JHSCWaveformView-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		60C4FC021B3CEC2700A7E39D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		60C4FC041B3CEC4400A7E39D /* SCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		60C4FC051B3CEC4400A7E39D /* SCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		60C4FC061B3CEC4400A7E39D /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = SOURCE_ROOT; };
+		60C4FC071B3CEC4400A7E39D /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = SOURCE_ROOT; };
+		60C4FC0A1B3CEC5500A7E39D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
 		DC2C7A2F1892A0770085043D /* JHSCWaveformView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHSCWaveformView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2C7A321892A0770085043D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC2C7A341892A0770085043D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DC2C7A361892A0770085043D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		DC2C7A3A1892A0770085043D /* JHSCWaveformView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JHSCWaveformView-Info.plist"; sourceTree = "<group>"; };
-		DC2C7A3C1892A0770085043D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC2C7A3E1892A0770085043D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DC2C7A401892A0770085043D /* JHSCWaveformView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JHSCWaveformView-Prefix.pch"; sourceTree = "<group>"; };
-		DC2C7A411892A0770085043D /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
-		DC2C7A421892A0770085043D /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
-		DC2C7A451892A0770085043D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC2C7A471892A0770085043D /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
-		DC2C7A481892A0770085043D /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
-		DC2C7A4A1892A0770085043D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DC2C7A511892A0770085043D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DC2C7A671892A0AD0085043D /* SCWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWaveformView.h; sourceTree = "<group>"; };
-		DC2C7A681892A0AD0085043D /* SCWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWaveformView.m; sourceTree = "<group>"; };
 		DC2C7A6B1892A84F0085043D /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 		DCC79A2B1896983000CECFE7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E09F8929FAC9CCDE6CC82FDF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ED5B7330987CC3940CE9B0FC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +50,22 @@
 				DC2C7A351892A0770085043D /* CoreGraphics.framework in Frameworks */,
 				DC2C7A371892A0770085043D /* UIKit.framework in Frameworks */,
 				DC2C7A331892A0770085043D /* Foundation.framework in Frameworks */,
+				64B4A50CEE3D3C547905618B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CED1220E31C009F1640E81EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51BEC902C2E949847CA757EB /* Pods.debug.xcconfig */,
+				E09F8929FAC9CCDE6CC82FDF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC2C7A261892A0770085043D = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +73,7 @@
 				DC2C7A381892A0770085043D /* Sources */,
 				DC2C7A311892A0770085043D /* Frameworks */,
 				DC2C7A301892A0770085043D /* Products */,
+				CED1220E31C009F1640E81EC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +93,7 @@
 				DC2C7A341892A0770085043D /* CoreGraphics.framework */,
 				DC2C7A361892A0770085043D /* UIKit.framework */,
 				DC2C7A511892A0770085043D /* XCTest.framework */,
+				ED5B7330987CC3940CE9B0FC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,19 +101,12 @@
 		DC2C7A381892A0770085043D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DC2C7A411892A0770085043D /* SCAppDelegate.h */,
-				DC2C7A421892A0770085043D /* SCAppDelegate.m */,
-				DC2C7A441892A0770085043D /* Main.storyboard */,
-				DC2C7A471892A0770085043D /* SCViewController.h */,
-				DC2C7A481892A0770085043D /* SCViewController.m */,
-				DC2C7A4A1892A0770085043D /* Images.xcassets */,
+				60C4FC041B3CEC4400A7E39D /* SCAppDelegate.h */,
+				60C4FC051B3CEC4400A7E39D /* SCAppDelegate.m */,
+				60C4FC061B3CEC4400A7E39D /* SCViewController.h */,
+				60C4FC071B3CEC4400A7E39D /* SCViewController.m */,
+				60C4FC0A1B3CEC5500A7E39D /* Images.xcassets */,
 				DC2C7A391892A0770085043D /* Supporting Files */,
-				DC2C7A671892A0AD0085043D /* SCWaveformView.h */,
-				DC2C7A681892A0AD0085043D /* SCWaveformView.m */,
-				DC27B75C1A9D0C80003DA2CB /* SCScrollableWaveformView.h */,
-				DC27B75D1A9D0C80003DA2CB /* SCScrollableWaveformView.m */,
-				DC27B75F1A9D2649003DA2CB /* SCWaveformCache.h */,
-				DC27B7601A9D2649003DA2CB /* SCWaveformCache.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -117,10 +114,9 @@
 		DC2C7A391892A0770085043D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC2C7A3A1892A0770085043D /* JHSCWaveformView-Info.plist */,
-				DC2C7A3B1892A0770085043D /* InfoPlist.strings */,
-				DC2C7A3E1892A0770085043D /* main.m */,
-				DC2C7A401892A0770085043D /* JHSCWaveformView-Prefix.pch */,
+				60C4FBFF1B3CEC2000A7E39D /* JHSCWaveformView-Info.plist */,
+				60C4FC021B3CEC2700A7E39D /* main.m */,
+				60C4FC001B3CEC2000A7E39D /* JHSCWaveformView-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC2C7A611892A0770085043D /* Build configuration list for PBXNativeTarget "JHSCWaveformView" */;
 			buildPhases = (
+				E3EDFD6C609F4514B98E46BC /* Check Pods Manifest.lock */,
 				DC2C7A2B1892A0770085043D /* Sources */,
 				DC2C7A2C1892A0770085043D /* Frameworks */,
 				DC2C7A2D1892A0770085043D /* Resources */,
+				5064BB9788F582832C917CBE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,49 +176,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C4FC0B1B3CEC5500A7E39D /* Images.xcassets in Resources */,
 				DC2C7A6C1892A84F0085043D /* test.m4a in Resources */,
-				DC2C7A4B1892A0770085043D /* Images.xcassets in Resources */,
-				DC2C7A3D1892A0770085043D /* InfoPlist.strings in Resources */,
-				DC2C7A461892A0770085043D /* Main.storyboard in Resources */,
+				60C4FC011B3CEC2000A7E39D /* JHSCWaveformView-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5064BB9788F582832C917CBE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3EDFD6C609F4514B98E46BC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC2C7A2B1892A0770085043D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2C7A431892A0770085043D /* SCAppDelegate.m in Sources */,
-				DC27B7611A9D2649003DA2CB /* SCWaveformCache.m in Sources */,
-				DC27B75E1A9D0C80003DA2CB /* SCScrollableWaveformView.m in Sources */,
-				DC2C7A491892A0770085043D /* SCViewController.m in Sources */,
-				DC2C7A3F1892A0770085043D /* main.m in Sources */,
-				DC2C7A691892A0AD0085043D /* SCWaveformView.m in Sources */,
+				60C4FC081B3CEC4400A7E39D /* SCAppDelegate.m in Sources */,
+				60C4FC091B3CEC4400A7E39D /* SCViewController.m in Sources */,
+				60C4FC031B3CEC2700A7E39D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DC2C7A3B1892A0770085043D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC2C7A3C1892A0770085043D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DC2C7A441892A0770085043D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC2C7A451892A0770085043D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DC2C7A5F1892A0770085043D /* Debug */ = {
@@ -297,12 +305,13 @@
 		};
 		DC2C7A621892A0770085043D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BEC902C2E949847CA757EB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sources/JHSCWaveformView-Prefix.pch";
-				INFOPLIST_FILE = "Sources/JHSCWaveformView-Info.plist";
+				GCC_PREFIX_HEADER = "JHSCWaveformView-Prefix.pch";
+				INFOPLIST_FILE = "JHSCWaveformView-Info.plist";
 				PRODUCT_NAME = JHSCWaveformView;
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,12 +319,13 @@
 		};
 		DC2C7A631892A0770085043D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09F8929FAC9CCDE6CC82FDF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sources/JHSCWaveformView-Prefix.pch";
-				INFOPLIST_FILE = "Sources/JHSCWaveformView-Info.plist";
+				GCC_PREFIX_HEADER = "JHSCWaveformView-Prefix.pch";
+				INFOPLIST_FILE = "JHSCWaveformView-Info.plist";
 				PRODUCT_NAME = JHSCWaveformView;
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,0 +1,25 @@
+PODS:
+  - ChameleonFramework (1.2.0)
+  - JHSCWaveformView (2.0.6):
+    - JHSCWaveformView/Chameleon (= 2.0.6)
+  - JHSCWaveformView/Chameleon (2.0.6):
+    - ChameleonFramework
+    - UIColor-Crayola
+    - UIColor-Pantone
+  - UIColor-Crayola (1.0)
+  - UIColor-Pantone (1.0)
+
+DEPENDENCIES:
+  - JHSCWaveformView (from `../`)
+
+EXTERNAL SOURCES:
+  JHSCWaveformView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ChameleonFramework: 4d6bf87fcaee176f487176cdccc4229637ec97f0
+  JHSCWaveformView: f75da18bd95815fa3160b30e51078bb4467935bf
+  UIColor-Crayola: 0d2f68032cbea6ba4669b360ffb641d203b41a0d
+  UIColor-Pantone: b6e5ab4c032f704f75453cfc0e8a07f68624cff5
+
+COCOAPODS: 0.37.2

@@ -15,15 +15,12 @@ Pod::Spec.new do |s|
   s.author       = { "Simon CORSIN" => "simon@corsin.me", "JHays" => "orbosphere@gmail.com" }
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/jhays/JHSCWaveformView.git", :tag => "v2.0.6" }
-  s.source_files  = [
-  		  "Sources/SCWaveformView.h",
-		  "Sources/SCWaveformView.m",
-		  "Sources/SCScrollableWaveformView.h",
-		  "Sources/SCScrollableWaveformView.m",
-		  "Sources/SCWaveformCache.h",
-		  "Sources/SCWaveformCache.m"
-  ]
+  s.source_files = 'Pod/Classes/**/*'
   s.public_header_files = 'Sources/*.h'
   s.requires_arc = true
-
+  s.subspec 'Chameleon' do |c|
+    c.dependency 'ChameleonFramework'
+    c.dependency 'UIColor-Crayola'
+    c.dependency 'UIColor-Pantone'
+  end
 end
