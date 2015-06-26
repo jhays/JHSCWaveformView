@@ -24,9 +24,9 @@
 
     self.scrollableWaveformView.waveformView.precision = 1;
     self.scrollableWaveformView.waveformView.lineWidthRatio = 1;
-    self.scrollableWaveformView.waveformView.normalColor = [UIColor colorWithRed:0.8 green:0.3 blue:0.3 alpha:1];
+    self.scrollableWaveformView.waveformView.gradientNormalColors = @[[UIColor orangeColor], [UIColor redColor]];
     self.scrollableWaveformView.waveformView.channelsPadding = 10;
-    self.scrollableWaveformView.waveformView.progressColor = [UIColor colorWithRed:1 green:0.2 blue:0.2 alpha:1];
+    self.scrollableWaveformView.waveformView.gradientProgressColors = @[[UIColor redColor], [UIColor blackColor]];
     AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"m4a"] options:nil];
     
     self.scrollableWaveformView.alpha = 0.8;

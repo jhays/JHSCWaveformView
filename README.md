@@ -5,8 +5,8 @@ A blazing fast customizable waveform view. Extract the audio section of an asset
 
 JHSCWaveformView is a fork of SCWaveformView. 
 JHSCWaveformView is a WIP, goals include:
-  * Rounded Corners (Only works when precision/lineWidthRatio settings result in lines with a width > 2) -done
-  * Color options & gradients -todo
+  * Rounded Corners (Only works when precision/lineWidthRatio settings result in lines with a width > 2) -- (done!)
+  * Color options & gradients -- (gradients done!, more color options todo)
   * Color-coded EQ based mutli-layered waveforms -todo
 
 <img src="waveform.gif">

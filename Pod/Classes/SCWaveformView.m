@@ -8,6 +8,7 @@
 
 #import "SCWaveformView.h"
 #import "SCWaveformCache.h"
+#import "Chameleon.h"
 
 #define noiseFloor (-50.0)
 
@@ -216,28 +217,33 @@
                 }
                 
                 SCWaveformLayer *layer = [[_waveforms objectAtIndex:channel] objectAtIndex:idx];
+                layer.frame = CGRectMake((newFirstVisibleIdx + idx) * bandWidth, _channelsPadding * channel + heightPerChannel * channel + halfHeightPerChannel - pixelHeight,
+                                         _lineWidthRatio / pixelRatio, pixelHeight * 2);
                 
                 CGColorRef destColor = nil;
                 
                 if (CMTIME_COMPARE_INLINE(time, >=, _progressTime)) {
-                    destColor = normalColor;
+                    if (_gradientNormalColors != nil && _gradientNormalColors.count > 0) {
+                        destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientNormalColors].CGColor;
+                    }else {
+                        destColor = normalColor;
+                    }
                 } else {
-                    destColor = progressColor;
+                    if (_gradientProgressColors != nil && _gradientProgressColors.count > 0) {
+                        destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientProgressColors].CGColor;
+                    }else {
+                        destColor = progressColor;
+                    }
                 }
                 
                 if (layer.backgroundColor != destColor) {
                     layer.backgroundColor = destColor;
                 }
                 
-                layer.frame = CGRectMake((newFirstVisibleIdx + idx) * bandWidth, _channelsPadding * channel + heightPerChannel * channel + halfHeightPerChannel - pixelHeight,
-                                         _lineWidthRatio / pixelRatio, pixelHeight * 2);
-                
                 if (_roundedCorners) {
-                    
                     layer.cornerRadius = layer.frame.size.width/2;
-                    NSLog(@"YES rounded %f", layer.cornerRadius);
                 }else {
-                    NSLog(@"NO rounded");
+                    layer.cornerRadius = 0;
                 }
                 
                 layer.waveformTime = time;
@@ -293,8 +299,16 @@
         for (SCWaveformLayer *layer in layers) {
             if (updateColor) {
                 CGColorRef destColor = progressColor;
+                if (_gradientProgressColors != nil && _gradientProgressColors.count > 0) {
+                    destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientProgressColors].CGColor;
+                }
+                
                 if (CMTIME_COMPARE_INLINE(layer.waveformTime, >, _progressTime)) {
-                    destColor = normalColor;
+                    if (_gradientNormalColors != nil && _gradientNormalColors.count > 0) {
+                        destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientNormalColors].CGColor;
+                    }else {
+                        destColor = normalColor;
+                    }
                 }
                 
                 if (layer.backgroundColor != destColor) {
@@ -310,10 +324,8 @@
             
             if (_roundedCorners) {
                 layer.cornerRadius = layer.frame.size.width/2;
-                NSLog(@"YES %f", layer.cornerRadius);
             }else {
                 layer.cornerRadius = 0;
-                NSLog(@"NO");
             }
         }
     }
@@ -330,8 +342,20 @@
     [self _updateLayersColor:YES lineWidth:NO];
 }
 
+- (void)setGradientNormalColors:(NSArray *)gradientNormalColors {
+    _gradientNormalColors = gradientNormalColors;
+    
+    [self _updateLayersColor:YES lineWidth:NO];
+}
+
 - (void)setProgressColor:(UIColor *)progressColor {
     _progressColor = progressColor;
+    
+    [self _updateLayersColor:YES lineWidth:NO];
+}
+
+- (void)setGradientProgressColors:(NSArray *)gradientProgressColors {
+    _gradientProgressColors = gradientProgressColors;
     
     [self _updateLayersColor:YES lineWidth:NO];
 }

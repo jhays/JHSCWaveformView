@@ -33,10 +33,22 @@
 @property (strong, nonatomic) UIColor *normalColor;
 
 /**
+ Array of colors that will be used for every bands that are after
+ the progressTime. If set (array count > 0), gradientNormalColor will override normalColor
+ */
+@property (strong, nonatomic) NSArray *gradientNormalColors;
+
+/**
  The color that will be used for every bands that are before
  the progressTime.
  */
 @property (strong, nonatomic) UIColor *progressColor;
+
+/**
+ Array of colors that will be used for every bands that are before
+ the progressTime. If set (array count > 0), gradientProgressColor will override progressColor
+ */
+@property (strong, nonatomic) NSArray *gradientProgressColors;
 
 /**
  The progress time. Each bands that are before this time will be
