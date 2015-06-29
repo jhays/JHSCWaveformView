@@ -24,9 +24,9 @@
 
     self.scrollableWaveformView.waveformView.precision = 1;
     self.scrollableWaveformView.waveformView.lineWidthRatio = 1;
-    self.scrollableWaveformView.waveformView.gradientNormalColors = @[[UIColor orangeColor], [UIColor redColor]];
+    self.scrollableWaveformView.waveformView.gradientNormalColors = @[[UIColor orangeColor], [UIColor whiteColor]];
     self.scrollableWaveformView.waveformView.channelsPadding = 10;
-    self.scrollableWaveformView.waveformView.gradientProgressColors = @[[UIColor redColor], [UIColor blackColor]];
+    self.scrollableWaveformView.waveformView.gradientProgressColors = @[[UIColor orangeColor], [UIColor redColor]];
     AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"m4a"] options:nil];
     
     self.scrollableWaveformView.alpha = 0.8;
@@ -45,6 +45,17 @@
     __unsafe_unretained SCViewController *mySelf = self;
     _observer = [_player addPeriodicTimeObserverForInterval:CMTimeMake(1, 60) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
         mySelf.scrollableWaveformView.waveformView.progressTime = time;
+        double duration = CMTimeGetSeconds(asset.duration);
+        if (isfinite(duration)){
+            double percentComplete = CMTimeGetSeconds(time) / duration;
+            double newOffset = (mySelf.scrollableWaveformView.contentSize.width * percentComplete) - (mySelf.scrollableWaveformView.frame.size.width/2);
+            if (newOffset < 0) {
+                newOffset = 0;
+            }
+            
+            mySelf.scrollableWaveformView.contentOffset = CGPointMake(newOffset, 0);
+        }
+        
     }];
 }
 

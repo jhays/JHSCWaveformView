@@ -224,13 +224,17 @@
                 
                 if (CMTIME_COMPARE_INLINE(time, >=, _progressTime)) {
                     if (_gradientNormalColors != nil && _gradientNormalColors.count > 0) {
-                        destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientNormalColors].CGColor;
+                        if (layer.frame.size.height > 0 && layer.frame.size.width > 0) {
+                            destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientNormalColors].CGColor;
+                        }
                     }else {
                         destColor = normalColor;
                     }
                 } else {
                     if (_gradientProgressColors != nil && _gradientProgressColors.count > 0) {
-                        destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientProgressColors].CGColor;
+                        if (layer.frame.size.height > 0 && layer.frame.size.width > 0) {
+                            destColor = [UIColor colorWithGradientStyle:UIGradientStyleTopToBottom withFrame:layer.frame andColors:_gradientProgressColors].CGColor;
+                        }
                     }else {
                         destColor = progressColor;
                     }

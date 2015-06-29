@@ -132,6 +132,7 @@ static BOOL SCApproximateEquals(CGFloat x, CGFloat y, CGFloat x2, CGFloat y2) {
     [super layoutSubviews];
     
     _waveformView.frame = self.bounds;
+    NSLog(@"waveformView frame: %@", [NSValue valueWithCGRect:_waveformView.frame]);
     
     [self _updateScrollView];
 }
