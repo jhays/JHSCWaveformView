@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SCWaveformView.h"
-#import "SCScrollableWaveformView.h"
+#import "JHSCWaveformView.h"
+#import "JHSCScrollableWaveformView.h"
 
-@interface SCViewController : UIViewController
+@interface JHSCViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet SCScrollableWaveformView *scrollableWaveformView;
 @property (weak, nonatomic) IBOutlet UISlider *slider;

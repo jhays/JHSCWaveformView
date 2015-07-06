@@ -10,8 +10,8 @@
 		603285151B40CD7500B15A21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603285131B40CD7500B15A21 /* Main.storyboard */; };
 		60C4FC011B3CEC2000A7E39D /* JHSCWaveformView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60C4FBFF1B3CEC2000A7E39D /* JHSCWaveformView-Info.plist */; };
 		60C4FC031B3CEC2700A7E39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC021B3CEC2700A7E39D /* main.m */; };
-		60C4FC081B3CEC4400A7E39D /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC051B3CEC4400A7E39D /* SCAppDelegate.m */; };
-		60C4FC091B3CEC4400A7E39D /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC071B3CEC4400A7E39D /* SCViewController.m */; };
+		60C4FC081B3CEC4400A7E39D /* JHSCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC051B3CEC4400A7E39D /* JHSCAppDelegate.m */; };
+		60C4FC091B3CEC4400A7E39D /* JHSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C4FC071B3CEC4400A7E39D /* JHSCViewController.m */; };
 		60C4FC0B1B3CEC5500A7E39D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C4FC0A1B3CEC5500A7E39D /* Images.xcassets */; };
 		64B4A50CEE3D3C547905618B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5B7330987CC3940CE9B0FC /* libPods.a */; };
 		DC2C7A331892A0770085043D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2C7A321892A0770085043D /* Foundation.framework */; };
@@ -27,10 +27,10 @@
 		60C4FBFF1B3CEC2000A7E39D /* JHSCWaveformView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JHSCWaveformView-Info.plist"; sourceTree = SOURCE_ROOT; };
 		60C4FC001B3CEC2000A7E39D /* JHSCWaveformView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JHSCWaveformView-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		60C4FC021B3CEC2700A7E39D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
-		60C4FC041B3CEC4400A7E39D /* SCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = SOURCE_ROOT; };
-		60C4FC051B3CEC4400A7E39D /* SCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		60C4FC061B3CEC4400A7E39D /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = SOURCE_ROOT; };
-		60C4FC071B3CEC4400A7E39D /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = SOURCE_ROOT; };
+		60C4FC041B3CEC4400A7E39D /* JHSCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSCAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		60C4FC051B3CEC4400A7E39D /* JHSCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSCAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		60C4FC061B3CEC4400A7E39D /* JHSCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSCViewController.h; sourceTree = SOURCE_ROOT; };
+		60C4FC071B3CEC4400A7E39D /* JHSCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSCViewController.m; sourceTree = SOURCE_ROOT; };
 		60C4FC0A1B3CEC5500A7E39D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
 		DC2C7A2F1892A0770085043D /* JHSCWaveformView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHSCWaveformView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2C7A321892A0770085043D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -111,10 +111,10 @@
 		DC2C7A381892A0770085043D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				60C4FC041B3CEC4400A7E39D /* SCAppDelegate.h */,
-				60C4FC051B3CEC4400A7E39D /* SCAppDelegate.m */,
-				60C4FC061B3CEC4400A7E39D /* SCViewController.h */,
-				60C4FC071B3CEC4400A7E39D /* SCViewController.m */,
+				60C4FC041B3CEC4400A7E39D /* JHSCAppDelegate.h */,
+				60C4FC051B3CEC4400A7E39D /* JHSCAppDelegate.m */,
+				60C4FC061B3CEC4400A7E39D /* JHSCViewController.h */,
+				60C4FC071B3CEC4400A7E39D /* JHSCViewController.m */,
 				603285121B40CD7500B15A21 /* Base.lproj */,
 				60C4FC0A1B3CEC5500A7E39D /* Images.xcassets */,
 				DC2C7A391892A0770085043D /* Supporting Files */,
@@ -239,8 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60C4FC081B3CEC4400A7E39D /* SCAppDelegate.m in Sources */,
-				60C4FC091B3CEC4400A7E39D /* SCViewController.m in Sources */,
+				60C4FC081B3CEC4400A7E39D /* JHSCAppDelegate.m in Sources */,
+				60C4FC091B3CEC4400A7E39D /* JHSCViewController.m in Sources */,
 				60C4FC031B3CEC2700A7E39D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

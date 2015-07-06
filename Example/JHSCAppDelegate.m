@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Simon CORSIN. All rights reserved.
 //
 
-#import "SCAppDelegate.h"
+#import "JHSCAppDelegate.h"
 
-@implementation SCAppDelegate
+@implementation JHSCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

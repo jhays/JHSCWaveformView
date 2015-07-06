@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Simon CORSIN. All rights reserved.
 //
 
-#import "SCViewController.h"
-#import "SCWaveformView.h"
+#import "JHSCViewController.h"
+#import "JHSCWaveformView.h"
 
-@interface SCViewController () {
+@interface JHSCViewController () {
     AVPlayer *_player;
     id _observer;
 }
 
 @end
 
-@implementation SCViewController
+@implementation JHSCViewController
 
 - (void)viewDidLoad
 {
