@@ -6,19 +6,19 @@
 //  Copyright (c) 2014 Simon CORSIN. All rights reserved.
 //
 
-#import "SCWaveformView.h"
-#import "SCWaveformCache.h"
+#import "JHSCWaveformView.h"
+#import "JHSCWaveformCache.h"
 #import "Chameleon.h"
 
 #define noiseFloor (-50.0)
 
-@interface SCWaveformLayer : CALayer
+@interface JHSCWaveformLayer : CALayer
 
 @property (assign, nonatomic) CMTime waveformTime;
 
 @end
 
-@implementation SCWaveformLayer
+@implementation JHSCWaveformLayer
 
 
 @end
@@ -35,8 +35,8 @@
 
 @end
 
-@interface SCWaveformView() {
-    SCWaveformCache *_cache;
+@interface JHSCWaveformView() {
+    JHSCWaveformCache *_cache;
     NSMutableArray *_waveforms;
     SCWaveformLayerDelegate *_waveformLayersDelegate;
     CALayer *_waveformSuperlayer;
@@ -46,7 +46,7 @@
 
 @end
 
-@implementation SCWaveformView
+@implementation JHSCWaveformView
 
 - (instancetype)init {
     self = [super init];
@@ -76,7 +76,7 @@
     _timeRange = CMTimeRangeMake(kCMTimeZero, kCMTimePositiveInfinity);
     _progressTime = kCMTimeZero;
     
-    _cache = [SCWaveformCache new];
+    _cache = [JHSCWaveformCache new];
     _waveforms = [NSMutableArray new];
     _graphDirty = YES;
     
@@ -101,7 +101,7 @@
             NSArray *waveformLayers = [_waveforms lastObject];
             [_waveforms removeLastObject];
             
-            for (SCWaveformLayer *layer in waveformLayers) {
+            for (JHSCWaveformLayer *layer in waveformLayers) {
                 [layer removeFromSuperlayer];
             }
         } else {
@@ -113,7 +113,7 @@
         NSMutableArray *waveformLayers = [_waveforms objectAtIndex:i];
         
         while (waveformLayers.count < numberOfLayers) {
-            SCWaveformLayer *layer = [SCWaveformLayer new];
+            JHSCWaveformLayer *layer = [JHSCWaveformLayer new];
             layer.anchorPoint = CGPointMake(0, 0);
             layer.delegate = _waveformLayersDelegate;
             
@@ -171,7 +171,7 @@
                     dirtyRange.location = numberOfLayersPerChannel - offset;
                     for (int i = 0; i < offset; i++) {
                         for (NSMutableArray *waveformLayers in _waveforms) {
-                            SCWaveformLayer *layer = [waveformLayers objectAtIndex:0];
+                            JHSCWaveformLayer *layer = [waveformLayers objectAtIndex:0];
                             [waveformLayers removeObjectAtIndex:0];
                             [waveformLayers addObject:layer];
                         }
@@ -180,7 +180,7 @@
                     dirtyRange.location = 0;
                     for (int i = offset; i < 0; i++) {
                         for (NSMutableArray *waveformLayers in _waveforms) {
-                            SCWaveformLayer *layer = [waveformLayers lastObject];
+                            JHSCWaveformLayer *layer = [waveformLayers lastObject];
                             [waveformLayers removeLastObject];
                             [waveformLayers insertObject:layer atIndex:0];
                         }
@@ -216,7 +216,7 @@
                     }
                 }
                 
-                SCWaveformLayer *layer = [[_waveforms objectAtIndex:channel] objectAtIndex:idx];
+                JHSCWaveformLayer *layer = [[_waveforms objectAtIndex:channel] objectAtIndex:idx];
                 layer.frame = CGRectMake((newFirstVisibleIdx + idx) * bandWidth, _channelsPadding * channel + heightPerChannel * channel + halfHeightPerChannel - pixelHeight,
                                          _lineWidthRatio / pixelRatio, pixelHeight * 2);
                 
@@ -300,7 +300,7 @@
     CGFloat pixelRatio = [UIScreen mainScreen].scale * _precision;
     
     for (NSArray *layers in _waveforms) {
-        for (SCWaveformLayer *layer in layers) {
+        for (JHSCWaveformLayer *layer in layers) {
             if (updateColor) {
                 CGColorRef destColor = progressColor;
                 if (_gradientProgressColors != nil && _gradientProgressColors.count > 0) {

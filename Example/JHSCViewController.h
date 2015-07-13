@@ -12,7 +12,7 @@
 
 @interface JHSCViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet SCScrollableWaveformView *scrollableWaveformView;
+@property (weak, nonatomic) IBOutlet JHSCScrollableWaveformView *scrollableWaveformView;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 - (IBAction)playButtonTapped:(UIButton *)sender;
 

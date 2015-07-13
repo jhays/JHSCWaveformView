@@ -42,7 +42,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_playReachedEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:_player.currentItem];
     
-    __unsafe_unretained SCViewController *mySelf = self;
+    __unsafe_unretained JHSCViewController *mySelf = self;
     _observer = [_player addPeriodicTimeObserverForInterval:CMTimeMake(1, 60) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
         mySelf.scrollableWaveformView.waveformView.progressTime = time;
         double duration = CMTimeGetSeconds(asset.duration);

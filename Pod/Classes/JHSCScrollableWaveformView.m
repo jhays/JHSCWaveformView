@@ -1,20 +1,20 @@
 //
-//  SCScrollableWaveformView.m
-//  SCWaveformView
+//  JHSCScrollableWaveformView.m
+//  JHSCWaveformView
 //
 //  Created by Simon CORSIN on 24/02/15.
 //  Copyright (c) 2015 Simon CORSIN. All rights reserved.
 //
 
-#import "SCScrollableWaveformView.h"
+#import "JHSCScrollableWaveformView.h"
 
-@interface SCScrollableWaveformView() {
+@interface JHSCScrollableWaveformView() {
     BOOL _ignoreObservingEvents;
 }
 
 @end
 
-@implementation SCScrollableWaveformView
+@implementation JHSCScrollableWaveformView
 
 static char *WaveformAssetContext = "WaveformAsset";
 static char *WaveformTimeRangeContext = "WaveformTimeRange";
@@ -41,7 +41,7 @@ static char *ScrollableWaveformContentOffsetContext = "ScrollableWaveformContent
 }
 
 - (void)_commonInit {    
-    _waveformView = [SCWaveformView new];
+    _waveformView = [JHSCWaveformView new];
     [_waveformView addObserver:self forKeyPath:@"asset" options:NSKeyValueObservingOptionNew context:WaveformAssetContext];
     [_waveformView addObserver:self forKeyPath:@"timeRange" options:NSKeyValueObservingOptionNew context:WaveformTimeRangeContext];
     

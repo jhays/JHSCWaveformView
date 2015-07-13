@@ -9,9 +9,9 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 
-@class SCWaveformCache;
+@class JHSCWaveformCache;
 
-@interface SCWaveformCache : NSObject
+@interface JHSCWaveformCache : NSObject
 
 @property (strong, nonatomic) AVAsset *asset;
 

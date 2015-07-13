@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SCWaveformView.h"
+#import "JHSCWaveformView.h"
 
-@class SCWaveformView;
+@class JHSCWaveformView;
 
-@interface SCScrollableWaveformView : UIScrollView
+@interface JHSCScrollableWaveformView : UIScrollView
 
 /**
  The managed waveformView.
  */
-@property (readonly, nonatomic) SCWaveformView *waveformView;
+@property (readonly, nonatomic) JHSCWaveformView *waveformView;
 
 @end

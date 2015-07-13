@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
-#import "SCWaveformCache.h"
-#import "SCScrollableWaveformView.h" // For convenience
+#import "JHSCWaveformCache.h"
+#import "JHSCScrollableWaveformView.h" // For convenience
 
-@interface SCWaveformView : UIView
+@interface JHSCWaveformView : UIView
 
 /**
  The asset to render.

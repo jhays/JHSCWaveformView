@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Simon CORSIN. All rights reserved.
 //
 
-#import "SCWaveformCache.h"
+#import "JHSCWaveformCache.h"
 
 #ifndef SCWaveformDebug
 # define SCWaveformDebug 0
 #endif
 
-@interface SCWaveformCache() {
+@interface JHSCWaveformCache() {
     NSUInteger _samplesPerPixel;
     CMTime _cachedStartTime;
     NSMutableArray *_channelsCachedData;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation SCWaveformCache
+@implementation JHSCWaveformCache
 
 - (id)init {
     self = [super init];
@@ -63,7 +63,7 @@
 
 + (BOOL)applyError:(NSError **)error withMessage:(NSString *)message {
     if (error != nil) {
-        *error = [NSError errorWithDomain:@"SCWaveformView" code:500 userInfo:@{
+        *error = [NSError errorWithDomain:@"JSCWaveformView" code:500 userInfo:@{
                                                                                 NSLocalizedDescriptionKey : message
                                                                                 }];
     }
@@ -108,7 +108,7 @@ static float SCDecibelAverage(double sample, NSUInteger sampleCount) {
     NSArray *audioTrackArray = [self.asset tracksWithMediaType:AVMediaTypeAudio];
     
     if (audioTrackArray.count == 0) {
-        return [SCWaveformCache applyError:error withMessage:@"No audio track in asset"];
+        return [JHSCWaveformCache applyError:error withMessage:@"No audio track in asset"];
     }
     
     AVAssetTrack *songTrack = [audioTrackArray objectAtIndex:0];
@@ -121,7 +121,7 @@ static float SCDecibelAverage(double sample, NSUInteger sampleCount) {
         const AudioStreamBasicDescription* fmtDesc = CMAudioFormatDescriptionGetStreamBasicDescription(item);
         
         if (fmtDesc == nil) {
-            return [SCWaveformCache applyError:error withMessage:@"Unable to get audio stream description"];
+            return [JHSCWaveformCache applyError:error withMessage:@"Unable to get audio stream description"];
         }
         
         channelCount = fmtDesc->mChannelsPerFrame;
