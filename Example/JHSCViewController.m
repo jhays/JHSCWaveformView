@@ -57,6 +57,24 @@
         }
         
     }];
+    
+    
+    
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    CAGradientLayer *gradient = [[CAGradientLayer alloc] init];
+    
+    gradient.frame = self.scrollableWaveformView.waveformView.layer.bounds;
+    gradient.startPoint = CGPointMake(0.0, 0.0);
+    gradient.endPoint = CGPointMake(1.0, 1.0);
+    
+    gradient.colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor blueColor].CGColor];
+    
+    gradient.mask = self.scrollableWaveformView.waveformView.layer;
+    
+    [self.view.layer addSublayer:gradient];
 }
 
 - (void)_playReachedEnd:(NSNotification *)notification {
